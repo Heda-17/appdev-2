@@ -1,0 +1,174 @@
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<style>
+    body {
+        background: #f4f1ee;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .profile-page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 0 0;
+    }
+
+    .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 26px;
+        border-bottom: 1px solid #d7d1cc;
+        margin-bottom: 32px;
+    }
+
+    .profile-circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 3px solid #1d1d1d;
+        overflow: hidden;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+    }
+
+    .profile-picture {
+        width: 100%;
+        height: 100%;
+        background-image: url('/images/profile.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contact-line {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 18px;
+        color: #515151;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        margin-right: 10px;
+    }
+
+    .contact-line .line {
+        width: 220px;
+        height: 1px;
+        background: #d7d1cc;
+        margin-left: 6px;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .content h1 {
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 0 0 26px;
+        color: #111111;
+        letter-spacing: -0.04em;
+    }
+
+    .section {
+        border-top: 1px solid #d7d1cc;
+        padding-top: 26px;
+        margin-top: 36px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0 0 18px;
+        color: #111111;
+    }
+
+    .section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section li {
+        font-size: 18px;
+        line-height: 1.9;
+        margin: 0;
+    }
+
+    .section strong {
+        font-weight: 700;
+    }
+
+    .section .subtext {
+        font-size: 18px;
+        color: #2d2d2d;
+        margin: 0;
+    }
+
+    @@media (max-width: 768px) {
+        .top-bar {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .contact-line {
+            justify-content: flex-start;
+            margin-right: 0;
+        }
+
+        .content h1 {
+            font-size: 38px;
+        }
+    }
+</style>
+
+<div class="profile-page">
+    <div class="top-bar">
+        <div class="profile-circle">
+            <div class="profile-picture"></div>
+        </div>
+
+        <div class="contact-line">
+            <span>gonzales.daniel00012@gmail.com</span>
+            <span>|</span>
+            <span>0123456789</span>
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Information</h1>
+
+
+        <div class="section">
+            <h2>Personal/Entity Information</h2>
+            <ul>
+                <li>• <strong>Full Name: Daniel D. Gonzales</strong></li>
+                <li>• <strong>Contact Information: 0123456789</strong></li>
+                <li>• <strong>Phone: 0123456789</strong></li>
+                <li>• <strong>Email: gonzales.daniel00012@gmail.com</strong></li>
+                <li>• <strong>Address: Maricaban, Pasay City</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>General Details</h2>
+            <ul>
+                <li>• <strong>Date of Birth/Age: July 31, 2006, 20 years old</strong></li>
+                <li>• <strong>Nationality (if applicable): Filipino</strong></li>
+                <li>• <strong>ID/Reference Number: 123456789</strong></li>
+            </ul>
+        </div>
+
+    
+    </div>
+</div>
+
